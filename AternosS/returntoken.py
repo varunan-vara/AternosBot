@@ -2,10 +2,10 @@ import js2py #type:ignore
 import time
 
 def convertToken (garbage):
+    print("Finding Token")
     line1 = garbage.text.split('const COOKIE_PREFIX = "ATERNOS";')
     line2 = line1[1].split("</script>")
     line3 = line2[1].split("{window")
-    print(line3[1])
     time.sleep(5)
 
     func = '''
